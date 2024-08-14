@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/Naples_regional.png); background-size:cover; background-repeat: no-repeat">
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Ukiyo-e Map</h1>
+                    <!--subtitle or author-->
+                    <p class="author">Alison Case</p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>This web map is inspired by the Japanese ukiyo-e works of Katsushika Hokusai. Ukiyo-e is often translated as “picture of the floating world,” referring to the pleasures of life and the transitory nature of humanity and the material world.</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/Inspiration.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">The color palette draws from Prussian blue, indigo, yellow, green, and reddish-brown.</p>
+                </div>
+            </div>
+
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/Imagery.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">Hokusai's depictions of snowcapped Mt. Fuji, flowing water, and soft trees are woven throughout the map.</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/CapeTown_regional.png" data-slide="1" class="fill">
+                    <img src="assets/Bergen_citybirdview.png" data-slide="2" class="fill hidden">
+                    <img src="assets/LondonBridge_buildingview.png" data-slide="3" class="fill hidden">
+                    <img src="assets/USCapitol_buildingview.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Cape Town, South Africa looks like this. Mountains represented by snowcapped Mt. Fuji icons stand amidst gently textured parks. Meanhile, the urban center, with its reddish-brown paths, meets the bold blue waves.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Bergen, Norway, with its densely concentrated buildings near the water, opens up as paths ascend Mt. Fløyen.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">A view of London Bridge shows the movement of water along the River Thames and the gentle stillness of the buildings with their thatched roofs.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Finally, a close look at the U.S. Capitol grounds illustrates Hokusai's emphasis on natural elements in human surroundings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/WestCoast_zoomedout.png">
+                            <p class="caption">A zoomed-out view of the ukiyo-e style.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/SantaBarbara_regional.png">
+                            <p class="caption">A mid-scale view centered on Santa Barbara, California.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/SantaBarbara_birdview.png">
+                            <p class="caption">A large-scale view of the Santa Barbara region.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/SantaBarbara_zoom.png">
+                            <p class="caption">Santa Barbara's Stearns Wharf.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/alisoncase/clz5of6m4031z01nx4xkb9gq3.html?title=false&access_token=pk.eyJ1IjoiYWxpc29uY2FzZSIsImEiOiJjbHFvMWl0azczYTA2MmpwdzAwM2EwMzV6In0.hSO4A4SAARALK5Z4kn4aew&zoomwheel=false#11.77/40.8054/14.3149" title="Ukiyo-e Style" style="border:none;"></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                        <p>Artwork from 
+                            <a href="https://www.metmuseum.org/art/collection/search/45434">The Met</a>
+                          </p>
+                          <p>Artwork from the 
+                            <a href="https://www.loc.gov/resource/jpd.00821/">Library of Congress</a>
+                          </p>
+                          <p>Artwork from the 
+                            <a href="https://www.artic.edu/artworks/57271/a-peasant-crossing-a-bridge-from-the-series-a-true-mirror-of-chinese-and-japanese-poems">Art Institute Chicago</a>
+                          </p>
+                          <p>Artwork from the 
+                            <a href="https://www.artic.edu/artworks/87008/shower-below-the-summit-sanka-hakuu-from-the-series-thirty-six-views-of-mount-fuji-fugaku-sanjurokkei">Art Institute Chicago</a>
+                          </p>
+                          <p>"The Colorful World of Ukiyo-e," 
+                            <a href="https://www.loc.gov/ghe/cascade/index.html?appid=2ea96b5ec90e4378a363c01d10131192">Library of Congress</a>
+                          </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
